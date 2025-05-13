@@ -16,7 +16,7 @@ end
 # return value: an array containing items in both arrays
 # hint: use Array#intersection
 def common_sports(current_sports, favorite_sports)
-  return current_sports.intersection(favorite_sports)
+  current_sports.intersection(favorite_sports)
 end
 
 
@@ -74,4 +74,5 @@ end
 # return value: true if the year is between 2001 - 2100, otherwise return false
 # hint: use Comparable#between?
 def twenty_first_century(year)
-  
+  year.between?(2001, 2100)
+end
